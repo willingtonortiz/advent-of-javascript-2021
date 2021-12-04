@@ -30,6 +30,7 @@ body {
 }
 
 .ring {
+  transform: rotate(90deg);
   position: absolute;
   left: 0;
   stroke: #09a65a;
