@@ -1,45 +1,22 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { Route, Routes } from "react-router";
+
+import HomePage from "./components/HomePage";
+import Day_01_Page from "./days/day_01/Day_01_Page";
+import Day_02_Page from "./days/day_02/Day_02_Page";
+import Day_03_Page from "./days/day_03/Day_03_Page";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+
+        <Route path="day-01" element={<Day_01_Page />} />
+        <Route path="day-02" element={<Day_02_Page />} />
+        <Route path="day-03" element={<Day_03_Page />} />
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
