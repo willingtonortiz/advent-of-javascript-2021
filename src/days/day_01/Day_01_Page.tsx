@@ -127,7 +127,7 @@ const Day_01_Page = () => {
     seconds: "00",
   });
   useEffect(() => {
-    document.title = "Day 1";
+    document.title = "AOJ 2021 - Day 1";
   }, []);
 
   const toggleTimer = () => {
