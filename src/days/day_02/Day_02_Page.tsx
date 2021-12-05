@@ -203,7 +203,7 @@ const Day_02_Page = () => {
   const decrementCount = useCart((state) => state.decrementItemCount);
 
   useEffect(() => {
-    document.title = "Day 2";
+    document.title = "AOJ 2021 - Day 2";
   }, []);
 
   return (
