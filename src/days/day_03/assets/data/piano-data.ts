@@ -50,6 +50,4 @@ const pianoData = [
   return accu.set(curr.key, curr.audio);
 }, new Map<string, HTMLAudioElement>());
 
-console.log(pianoData);
-
 export default pianoData;
