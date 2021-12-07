@@ -112,6 +112,10 @@ const Day_05_Page = () => {
   );
 
   useEffect(() => {
+    document.title = "AOJ 2021 - Day 5";
+  }, []);
+
+  useEffect(() => {
     console.log("SETTED");
 
     document.addEventListener("keydown", onKeyDown);
