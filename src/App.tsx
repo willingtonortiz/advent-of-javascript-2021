@@ -32,7 +32,6 @@ function App() {
       <Route path="day-01" element={<Day_01_Page />}></Route>
       <Route path="day-02" element={<Day_02_Page />}></Route>
       <Route path="day-03" element={<Day_03_Page />}></Route>
-
       <Route path="day-04" element={<Day_04_Page />}></Route>
       <Route path="day-05" element={<Day_05_Page />}></Route>
       <Route path="day-06" element={<Day_06_Page />}></Route>
